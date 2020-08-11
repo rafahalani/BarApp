@@ -1,18 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Form />
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Form from './components/Form.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Form
+  },
+  data() {
+    return {
+      form: [
+        {name: null},
+        {email: null},
+        {phone: null},
+        {message: null}
+      ]
+    }
+  },
+  methods: {
+    mounted(){
+      alert('yes');
+    }
+  },
 }
 </script>
 
