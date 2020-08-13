@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Form v-on:submit="submit"/>
+    <Form v-form v-on:submit="sub" action="#" method="post"/>
     
   </div>
 </template>
@@ -20,10 +20,18 @@ export default {
     }
   },
   methods: {
-    mounted(){
-      
-    }
-  },
+     /*  sub: function(event){
+          
+          if(this.login == "" || this.senha == ""){
+            this.alert = true
+            this.log = "User and Password is required."
+            event.preventDefault()
+          }else{
+            this.log = "Go"
+          }   
+      } */
+  }
+  
 }
 </script>
 
