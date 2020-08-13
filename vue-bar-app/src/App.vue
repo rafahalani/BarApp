@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Form />
+    <Form v-on:submit="submit"/>
     
   </div>
 </template>
@@ -16,17 +16,12 @@ export default {
   },
   data() {
     return {
-      form: [
-        {name: null},
-        {email: null},
-        {phone: null},
-        {message: null}
-      ]
+      form: []
     }
   },
   methods: {
     mounted(){
-      alert('yes');
+      
     }
   },
 }
